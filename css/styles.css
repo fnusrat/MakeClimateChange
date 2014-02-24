@@ -1,0 +1,169 @@
+/* Clear fix  */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+a {
+text-decoration: none
+color: inherit;
+}
+
+a:visited {
+  text-decoration: none
+color: inherit;
+}
+
+/*main page styles */
+
+.left {
+  float: left;
+  } 
+.banner {
+box-shadow: 0 1em 2em rgba(0,0,0,0.5);
+}
+.site-title {
+  font-size: 3em;
+  text-align: left;
+  color: rgba(50,50,50,0.7);
+  padding-top: 25px;
+  margin-left: 3em;
+}
+.hidden {
+  display: none;
+}
+body {
+ background-color: white;
+}
+.wrapper {
+  clear: both;
+  margin: 0 auto;
+  /*box-shadow: 0 1em 2em rgba(0,0,0,0.5);*/
+  background-image: url('../images/swirly-flowers.jpg');
+  max-width: 960px;
+  padding: 2em;
+  }
+.about-wrapper {
+  clear: both;
+  margin: 0 auto;
+ /* background-image: url('../images/landscape.jpg');*/
+  max-width: 960px;
+  padding: .5em;
+  color: #000;
+  font-size: 1.5em;
+  }
+  .projects-wrapper{
+  clear: both;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 2em;
+  background-image: url('../images/green-background.jpg');
+  }
+.project-main-section .site-links{
+  background-color: green;
+}
+.main-section {
+  clear: both;
+  margin: .5em auto;
+  width: 90%;
+  }
+.link-description {
+  font-size: 2em;
+  color: grey;
+  background-color: rgba(255,255,255,.5);
+  margin: 0 .5em .5em .5em;
+ padding: .5em;
+}
+.site-links:hover {
+  -webkit-transition-property:color, background; 
+  -webkit-transition:color 4s 1s ease-in;
+  -moz-transition:color 1s ease-in;
+  -o-transition:color 1s ease-in;
+  transition:color 1s ease-in;
+  background-color: rgba(0,0,0,.8);
+  color: rgba(255,255,255,.8);
+}
+.link-description p {
+  font-size: .5em;
+}
+.site-links{
+  float: left;
+  width: 70%;
+}
+
+/*project page*/
+
+
+/*inspiriation page*/
+
+.inspiration-image{
+  max-width: 800px;
+  max-height: 400px;
+  overflow: hidden;
+  margin: 3em;
+ }
+
+
+
+
+
+/*site navigation home button and title  page
+/*CSS Fundamentals: CSS 3 Transitions of sun icon By Dave Sparks,22 Feb 2010*/
+#circles{
+    width:100px; 
+    height:100px;
+    position:relative;
+}
+.outercircle{
+    width:180px; 
+    height:180px;
+    position:absolute;
+    z-index:1;
+    top:0:
+    left:0;
+}
+.middlecircle{
+    width:90px; 
+    height:90px;
+    position:absolute;
+    z-index:3;
+    top:15px; 
+    left:15px;
+}
+
+@-webkit-keyframes spin {
+from {
+    -webkit-transform: rotate(0deg);
+}
+to {
+    -webkit-transform: rotate(360deg);
+    }
+}
+ 
+@-webkit-keyframes spinrev {
+from {
+    -webkit-transform: rotate(0deg);
+    }
+to {
+    -webkit-transform: rotate(-360deg);
+    }
+}
+
+#circles:hover .outercircle {
+    -webkit-animation-name: spin;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 10s;
+}   
+ 
+#circles:hover .middlecircle{
+    -webkit-animation-name: spinrev;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 5s;
+}
