@@ -20,13 +20,19 @@ color: inherit;
 }
 
 /*main page styles */
-
 .left {
   float: left;
   } 
+
 .banner {
-box-shadow: 0 1em 2em rgba(0,0,0,0.5);
+padding-bottom: .5em;
 }
+
+@media only screen and (max-width: 750px) {
+
+
+}
+
 .site-title {
   font-size: 3em;
   text-align: left;
@@ -34,51 +40,66 @@ box-shadow: 0 1em 2em rgba(0,0,0,0.5);
   padding-top: 25px;
   margin-left: 3em;
 }
+
+@media only screen and (max-width: 400px) {
+ .site-title {
+  font-size: 2em;
+  text-align: left;
+  color: rgba(50,50,50,0.7);
+  padding-top: 10%;
+  margin-left: 30%;
+}
+
+}
+
 .hidden {
   display: none;
 }
+
 body {
- background-color: white;
 }
+
+.pagename {
+  color: green;
+  font-size: .75em;
+}
+
 .wrapper {
   clear: both;
-  margin: 0 auto;
-  /*box-shadow: 0 1em 2em rgba(0,0,0,0.5);*/
-  background-image: url('../images/swirly-flowers.jpg');
+  margin: 1em auto;
   max-width: 960px;
   padding: 2em;
-  }
-.about-wrapper {
-  clear: both;
-  margin: 0 auto;
- /* background-image: url('../images/landscape.jpg');*/
-  max-width: 960px;
-  padding: .5em;
-  color: #000;
-  font-size: 1.5em;
-  }
-  .projects-wrapper{
-  clear: both;
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 2em;
-  background-image: url('../images/green-background.jpg');
-  }
-.project-main-section .site-links{
-  background-color: green;
+  border-bottom-right-radius: 4em 1em;
+  border-top-right-radius: 1.5em 6em;
+  border-bottom-left-radius: 4em 2em;
+  border-top-left-radius: 2em 8em;
+  border:inset 10px green;
+  background-size:cover;
 }
+
+#fadeInBackground {
+  z-index: 10000;
+}
+​
 .main-section {
   clear: both;
   margin: .5em auto;
-  width: 90%;
-  }
+  width: 70%;
+  padding-left: 10%;
+}
+
 .link-description {
   font-size: 2em;
-  color: grey;
+  color: #000;
   background-color: rgba(255,255,255,.5);
   margin: 0 .5em .5em .5em;
- padding: .5em;
+  padding: .5em;
+  border-bottom-right-radius: 4em 1em;
+  border-top-right-radius: 1.5em 6em;
+  border-bottom-left-radius: 4em 2em;
+  border-top-left-radius: 2em 8em
 }
+
 .site-links:hover {
   -webkit-transition-property:color, background; 
   -webkit-transition:color 4s 1s ease-in;
@@ -86,20 +107,182 @@ body {
   -o-transition:color 1s ease-in;
   transition:color 1s ease-in;
   background-color: rgba(0,0,0,.8);
-  color: rgba(255,255,255,.8);
+  color: rgba(255,255,255,1);
 }
+
 .link-description p {
   font-size: .5em;
-}
+ }
 .site-links{
   float: left;
   width: 70%;
 }
 
-/*project page*/
+footer {
+  width:100%;
+  background-color: rgba(10,10,0,.6);
+  min-height: 300px;
+  padding: 1em 1em 2em 10%;
+  clear:both;
+}
+
+footer div.cf.heading{
+  font-size: 2em;
+  color:white;
+}
+footer div.cf{
+  font-size: 1em;
+  color:gray;
+  width:20%;
+  float:left;
+  padding: 1em;
+  border-color: #000;
+  overflow: hidden;
+  margin: .5em;
+}
+
+.footer-text {
+  color: rgba(255,255,255,0.7);
+  font-size: .75em;
+}
 
 
-/*inspiriation page*/
+
+@media only screen and (max-width: 750px) {
+
+  footer div.cf{
+  font-size: 1em;
+  color:#fff;
+  width:75%;
+  float: none;
+  padding: .5em;
+  border-color: #000;
+  overflow: hidden;
+  margin: .5em;
+}
+
+}
+
+/*/*project page----------------------------------------------------------*/
+
+.projects {
+  margin: 1em 1em 1em 10%;
+  max-width: 960px;
+  height: 100%;
+}
+
+.project-section {
+  margin: 1em 1em 1em 10%;
+  max-width: 960px;
+  height: 100%;
+}
+
+.project{
+  background-color:#2e5cf0;
+  font-size: 2em;
+  color: #fff;
+  height: 100%;
+  padding: .25em;
+  margin-top: 1em;
+  border-bottom-right-radius: 3em 8em;
+  border-top-right-radius: 14em 1em;
+  border-bottom-left-radius: 1em 3em;
+  border-top-left-radius: .8em 1em;
+  box-shadow: 10px 5px 5px rgba(0,0,100,.4);
+}
+
+.project-desc {
+background-color: green;
+  font-size: 1em;
+  color: #fff;
+  padding: 1em;
+  margin: 0 auto;
+  width:60%;
+   border-bottom-right-radius: 3em 2em;
+ /* border-top-right-radius: 1em 1em;*/
+  border-bottom-left-radius: 4em 1em;
+ /* border-top-left-radius: 8em 2em*/
+ box-shadow: 10px 5px 5px rgba(0,100,0,.4);
+}
+
+.project-img {
+background-color: gray;
+  font-size: 1em;
+  color: #fff;
+  padding: 1em;
+  margin: 0 auto;
+  width:45%;
+   border-bottom-right-radius: .5em 2em;
+ /* border-top-right-radius: 1em 1em;*/
+  border-bottom-left-radius: 1em 5em;
+ /* border-top-left-radius: 8em 2em*/
+ box-shadow: 10px 5px 5px rgba(20,20,35,.4);
+}
+
+.content{
+  padding-bottom: 2em;
+  /*border-radius: 1em;*/
+  width:100%;
+  height: 200px;
+  margin: 0 auto;
+  padding: 0px;
+  /*border-radius: 4em;*/
+  box-shadow: 10px 5px 5px rgba(20,20,35,.4);
+}
+
+div.map_canvas{
+  padding-bottom: 2em;
+  /*border-radius: 1em;*/
+  width:100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px
+}
+
+#project-section div.cf:first-child {
+  display: none
+}
+
+
+/*about page*/
+.dropcaps{
+  font-size: 25px; float: left; margin: 5px 5px 0 0; line-height: 0.8;
+  color: #2e5cf0;
+}
+
+.googleform {
+margin: 10% auto;
+}
+
+.about-section {
+  font-size: 1em;
+  color: white;
+
+}
+
+/*/data page styles -----------------------------------------------/
+*/
+#fadeInBackground-data {
+  min-height: 200px
+}
+
+.headline-text{
+  text-align: right;
+  color: white;
+  font-size: 1.5em;
+  text-shadow: 2px 2px gray;
+  width: 50%;
+  float:right;
+  background-color: rgba(255,255,255,.5);
+  border-bottom-right-radius: 1em 1em;
+  border-top-right-radius: 1em 1em;
+  border-bottom-left-radius: .1em .1em;
+  border-top-left-radius: 1em 1em;
+  box-shadow: 10px 5px 5px rgba(20,20,35,.4);
+  padding: .2em;
+}
+
+/*inspiriation page
 
 .inspiration-image{
   max-width: 800px;
@@ -108,25 +291,14 @@ body {
   margin: 3em;
  }
 
-
-
-
-
 /*site navigation home button and title  page
 /*CSS Fundamentals: CSS 3 Transitions of sun icon By Dave Sparks,22 Feb 2010*/
 #circles{
     width:100px; 
     height:100px;
-    position:relative;
-}
-.outercircle{
-    width:180px; 
-    height:180px;
     position:absolute;
-    z-index:1;
-    top:0:
-    left:0;
 }
+
 .middlecircle{
     width:90px; 
     height:90px;
@@ -136,15 +308,6 @@ body {
     left:15px;
 }
 
-@-webkit-keyframes spin {
-from {
-    -webkit-transform: rotate(0deg);
-}
-to {
-    -webkit-transform: rotate(360deg);
-    }
-}
- 
 @-webkit-keyframes spinrev {
 from {
     -webkit-transform: rotate(0deg);
@@ -154,13 +317,6 @@ to {
     }
 }
 
-#circles:hover .outercircle {
-    -webkit-animation-name: spin;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-duration: 10s;
-}   
- 
 #circles:hover .middlecircle{
     -webkit-animation-name: spinrev;
     -webkit-animation-iteration-count: infinite;

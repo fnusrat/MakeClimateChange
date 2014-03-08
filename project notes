@@ -1,0 +1,42 @@
+Home page
+	fade in background images
+		javascript to bring in images and possible slider
+			Images 
+			css styles
+
+	menu and navigation  that is responsive
+			top level navigation - moves to side when in mobile mode
+
+Listing of projects
+	list of project
+		javascript to pull data into array from google doc 
+
+		javascript to create un orderes lisst with classes for each listing
+			project
+				project detail
+				project picture
+				show map button
+					display a map with the geolocation of the project
+					* dispaly a map with the CO emissions at the same location or overlay this 
+				contact and website in a new window
+
+				when the title of the project is clicked the project is hidden, any other project is clicked then first hide all the project details
+
+		description with active css to display details or images
+			link to details and map page
+
+Add a new project
+	Form which write to Google docs directly
+
+Inspiration page
+	links and nice presentation of cool links
+		braungart wikipedia 
+		space 
+		spiral dynamics
+		integral consciousness
+		carters forum
+		GA site
+		Google data
+		Tableau
+About page
+	

@@ -1,3 +1,4 @@
+<!-- General Aseembly Project submission by Faheem Nusrat Front End Web Development-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,9 +9,6 @@
 <!-- external CSS link -->
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/styles.css">
-		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
-		<script type='text/javascript' src='../js/gmaps.js'></script>
-		
 </head>
 	<section class="banner">
 		<div id="circles" class="left">
@@ -23,7 +21,7 @@
 		</div>
 	</section>
 <body>	
-	<Section class="wrapper">
+	<Section class="wrapper" id="fadeInBackground">
 		<section class="main-section">
 			<a href="about.html">
 				<div class="cf">
@@ -32,9 +30,10 @@
 						<h2>About this site</h2>
 						<p>Some further text about this bit of the site and some further details which will be revealed.Some further text about this bit of the site and some further details which will be revealed</p>	
 					</div>
+				</div>
 			</a>	
 			<a href="projects.html">
-				</div>
+				
 				<div class="cf">
 					<div class="site-links"id="projects-icon"></div>
 					<div class="site-links link-description" id="projects-text">
@@ -64,10 +63,25 @@
 		
 	</Section>
 </body>
-<footer>				
+<footer>	
+	<div class="cf heading">About
+		<div class="footer-text">This site was crated for the GA final project for Front End Web Development Course.</div>
+	</div>
+		<div class="cf heading">Contact
+		<div class="footer-text">Faheem Nusrat</div></div>
+		
+	<div class="cf heading">Social
+		<div class="footer-text">
+			<div>Twitter</div>
+			<div>LinkedIn</div>
+			<div>Github</div>
+		</div>
+	</div>
+		
 </footer>
 <script src="js/jquery.js"></script>
 <script src="js/main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 </html>
 
 
